@@ -19,7 +19,7 @@ jobs:
         run: yarn build
         
       - name: Install Surge
-        run: npm install --global surge
+        run: npm install -g surge
         
       - name: Deploy to surge
         run: surge./build insidious-trucks.surge.sh &{{ secrets.SURGE_TTOKENN }}
